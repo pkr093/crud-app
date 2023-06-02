@@ -1,0 +1,27 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    section#introSection.center 
+        div Welcome to Our Dance Academy
+        .small Eat Sleep Dance Repeat
+    
+    section#missionSection
+        //- | section for sponsors
+        h3 Our Mission
+        .card 
+            p this is card1
+        .card
+             p this is card2
+        .card
+             p this is card3
+
+    section#sponsorSection
+        //- | section for sponsors
+        h3 our sponsors

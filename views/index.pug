@@ -1,0 +1,40 @@
+//- index.pug
+doctype html
+html
+  head
+    title Harry Dance Academy
+    style
+      include ../static/style.css
+  body
+    div#navbar 
+        ul.center
+            li #[a(href="/") Home]
+            li contact
+            li services 
+
+    section#introSection.center 
+        div Welcome to Our Dance Academy
+        .small Eat Sleep Dance Repeat
+    
+    section#missionSection
+        //- | section for sponsors
+        h3 Our Mission
+        .card 
+            p this is card1
+        .card
+             p this is card2
+        .card
+             p this is card3
+
+    section#sponsorSection
+        //- | section for sponsors
+        h3 our sponsors
+
+
+    footer#footer.center
+        | section for footer 
+
+    //- h1 My Site
+    //- p Welcome to my super lame site.
+    script
+      include ../static/index.js
